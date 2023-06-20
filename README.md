@@ -1,2 +1,3 @@
-# keepac-homebrew-tap
-The homebrew tap for keepac
+# Keepac
+
+The homebrew tap for [keepac](https://github.com/NiclasvanEyk/keepac)
