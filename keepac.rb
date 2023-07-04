@@ -5,12 +5,12 @@
 class Keepac < Formula
   desc ""
   homepage "https://github.com/NiclasvanEyk/keepac"
-  version "0.0.4"
+  version "0.0.5"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/NiclasvanEyk/keepac/releases/download/0.0.4/keepac_Darwin_arm64.tar.gz"
-      sha256 "dfd04198c0c85a8c9a5effe40cb3c81171de70137c8a09484c99829910c826e6"
+      url "https://github.com/NiclasvanEyk/keepac/releases/download/0.0.5/keepac_Darwin_arm64.tar.gz"
+      sha256 "3ab05c8e2e906e2ba11c8477b5f9e763f541ab36a89d48229b2834c8c1dca8d3"
 
       def install
         bin.install "changelog"
@@ -20,8 +20,8 @@ class Keepac < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/NiclasvanEyk/keepac/releases/download/0.0.4/keepac_Darwin_x86_64.tar.gz"
-      sha256 "162de07f5f414c3c70c65055896e3d593b0450f74a00f0bd8e05fcfd0c337aec"
+      url "https://github.com/NiclasvanEyk/keepac/releases/download/0.0.5/keepac_Darwin_x86_64.tar.gz"
+      sha256 "b7d6b7cd386017b9f2ed17c48e1ae2eecc093100fcc9641675fa30701bf02855"
 
       def install
         bin.install "changelog"
@@ -34,8 +34,8 @@ class Keepac < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/NiclasvanEyk/keepac/releases/download/0.0.4/keepac_Linux_x86_64.tar.gz"
-      sha256 "557723258d8656d4c141230e8ea0f16b9d940b9a36f4b7b5c1969bd434560cb8"
+      url "https://github.com/NiclasvanEyk/keepac/releases/download/0.0.5/keepac_Linux_x86_64.tar.gz"
+      sha256 "37a2be5a16cf03dd9e5559fca2e06a7a06f477ca5c9bdf2ef768503a560c7fa2"
 
       def install
         bin.install "changelog"
@@ -45,8 +45,8 @@ class Keepac < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/NiclasvanEyk/keepac/releases/download/0.0.4/keepac_Linux_arm64.tar.gz"
-      sha256 "82ebe22c407bd18725c55b44baa0f43ac654fe140dff3ea19dcdea2c04c76658"
+      url "https://github.com/NiclasvanEyk/keepac/releases/download/0.0.5/keepac_Linux_arm64.tar.gz"
+      sha256 "48cc8bb80c97ce41532e4c94852f0c76d0b58209718db1f18e52097261b45a6d"
 
       def install
         bin.install "changelog"
