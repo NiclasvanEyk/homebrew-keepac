@@ -5,12 +5,12 @@
 class Keepac < Formula
   desc ""
   homepage "https://github.com/NiclasvanEyk/keepac"
-  version "0.0.6"
+  version "0.0.7"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/NiclasvanEyk/keepac/releases/download/0.0.6/keepac_Darwin_arm64.tar.gz"
-      sha256 "6adb1475aef265b54d5453c62d3cbc28f85a92b2a4efa7e5df7f9538c2da1d6f"
+    if Hardware::CPU.intel?
+      url "https://github.com/NiclasvanEyk/keepac/releases/download/0.0.7/keepac_Darwin_x86_64.tar.gz"
+      sha256 "e44e32f8f244a9617d19606e58fdb3626f0a97911e6a5f413e6bb9ee25c6b904"
 
       def install
         bin.install "changelog"
@@ -19,9 +19,9 @@ class Keepac < Formula
         fish_completion.install "completions/changelog.fish"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/NiclasvanEyk/keepac/releases/download/0.0.6/keepac_Darwin_x86_64.tar.gz"
-      sha256 "af9d5113ebb6ee4818b72cbbb226c793ccd12b909a6637389f18ab96a1d808b2"
+    if Hardware::CPU.arm?
+      url "https://github.com/NiclasvanEyk/keepac/releases/download/0.0.7/keepac_Darwin_arm64.tar.gz"
+      sha256 "c5b279dca96b2bbbd116ecf7c140c44c57280a831b80de6c80c4fc7d7854cde4"
 
       def install
         bin.install "changelog"
@@ -34,8 +34,8 @@ class Keepac < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/NiclasvanEyk/keepac/releases/download/0.0.6/keepac_Linux_x86_64.tar.gz"
-      sha256 "1bf9392cc409089fb0ce7a492ddb496aea5d9e01823f9fc89bd4cc80071b881e"
+      url "https://github.com/NiclasvanEyk/keepac/releases/download/0.0.7/keepac_Linux_x86_64.tar.gz"
+      sha256 "1f2e6ffd42c7aca91f483b77ae8cd4a348b25fbd6cff7995e151951d5e0e552a"
 
       def install
         bin.install "changelog"
@@ -45,8 +45,8 @@ class Keepac < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/NiclasvanEyk/keepac/releases/download/0.0.6/keepac_Linux_arm64.tar.gz"
-      sha256 "15cf05d94875c9cbe29d2d0724b9f744c93bd6d40003ea266da61e6b600ee1cf"
+      url "https://github.com/NiclasvanEyk/keepac/releases/download/0.0.7/keepac_Linux_arm64.tar.gz"
+      sha256 "ea12c578878a1b4fa4a8f33c2c38719725817ae88c86e7e6ba96f6d5d625978e"
 
       def install
         bin.install "changelog"
